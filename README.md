@@ -11,6 +11,8 @@ we would like you to apply what you already know about business intelligence and
   - * https://www.kaggle.com/wsj/college-salaries (WSJ and degrees that pay back)
 - common data set - http://commondataset.org/
 - government - http://nces.ed.gov/
+  - need an account?
+  - https://nces.ed.gov/datalab/table/library
 - data prep
   - nulls
   - scale/standardize features?
