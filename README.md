@@ -35,3 +35,12 @@ we would like you to apply what you already know about business intelligence and
   - keras (simple neural network)
   - what visualization types?
 - neo4j
+
+
+tasks
+[x] git repos
+[x] data directory (ignoredir)
+  [x] download common data set
+  [ ] download other data sets?
+[ ] exploration ipynb
+[ ] pyth9on module
