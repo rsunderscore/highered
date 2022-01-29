@@ -18,7 +18,9 @@ we would like you to apply what you already know about business intelligence and
   - :heavy_dollar_sign: data can be obtained on usnews.com with ['college compass'](https://www.usnews.com/usnews/store/college_compass?src=web:col_compass:na:BC_homepage_headerpromo_CTA:20190418) subscriptions ($40 cost)
   - [ASC](https://professionals.collegeboard.org/higher-ed/recruitment/annual-survey) (Annual survey of colleges) contains CDS questions - can request ASC data access via [this form](https://collegeboard.tfaforms.net/69)
 - government - http://nces.ed.gov/
-  - need an account?
+  - [x] need an account? created - https://nces.ed.gov/datalab/
+  - tables were extracted frome existing papers and repserent summary statistics
+  - can also run a powerstats analysis but this also doesn't give access to source data
   - https://nces.ed.gov/datalab/table/library
 - data prep
   - nulls
