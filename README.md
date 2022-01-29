@@ -15,6 +15,7 @@ we would like you to apply what you already know about business intelligence and
   - cannot find an archive of prior years - each universiy has a separate archive of their submissions over tiem (e.g. MIT)
   - subdirs are forbidden 403 error but CDS_2021-2022.xlsx is a valid file - could we gess the month and filename to get prior years data
   - :thumbsdown: this is just the form to fill out - does not contain any output
+  - :heavy_dollar_sign: data can be obtained on usnews.com with ['college compass'](https://www.usnews.com/usnews/store/college_compass?src=web:col_compass:na:BC_homepage_headerpromo_CTA:20190418) subscriptions ($40 cost)
 - government - http://nces.ed.gov/
   - need an account?
   - https://nces.ed.gov/datalab/table/library
