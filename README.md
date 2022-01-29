@@ -14,6 +14,7 @@ we would like you to apply what you already know about business intelligence and
   - the url for data looks like: https://commondataset.org/wp-content/uploads/2021/10/CDS_2021-2022-1.xlsx
   - cannot find an archive of prior years - each universiy has a separate archive of their submissions over tiem (e.g. MIT)
   - subdirs are forbidden 403 error but CDS_2021-2022.xlsx is a valid file - could we gess the month and filename to get prior years data
+  - :thumbsdown: this is just the form to fill out - does not contain any output
 - government - http://nces.ed.gov/
   - need an account?
   - https://nces.ed.gov/datalab/table/library
@@ -41,10 +42,10 @@ we would like you to apply what you already know about business intelligence and
 - neo4j
 
 
-tasks
-[x] git repos
-[x] data directory (ignoredir)
-  [x] download common data set
-  [ ] download other data sets?
-[ ] exploration ipynb
-[ ] pyth9on module
+## tasks
+- [x] git repos
+- [x] data directory (ignoredir)
+  - [x] download common data set
+  - [ ] download other data sets?
+- [ ] exploration ipynb
+- [ ] pyth9on module
