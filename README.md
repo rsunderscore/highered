@@ -3,6 +3,7 @@ we would like you to apply what you already know about business intelligence and
 
 ## data resources
 - huggingface - https://huggingface.co
+  - unsucessful searches: education, college, university, student
 - kaggle - https://www.kaggle.com/datasets
   - https://www.kaggle.com/spscientist/students-performance-in-exams
   - https://www.kaggle.com/yasserh/student-marks-dataset
@@ -10,6 +11,9 @@ we would like you to apply what you already know about business intelligence and
   - https://www.kaggle.com/benroshan/factors-affecting-campus-placement
   - * https://www.kaggle.com/wsj/college-salaries (WSJ and degrees that pay back)
 - common data set - http://commondataset.org/
+  - the url for data looks like: https://commondataset.org/wp-content/uploads/2021/10/CDS_2021-2022-1.xlsx
+  - cannot find an archive of prior years - each universiy has a separate archive of their submissions over tiem (e.g. MIT)
+  - subdirs are forbidden 403 error but CDS_2021-2022.xlsx is a valid file - could we gess the month and filename to get prior years data
 - government - http://nces.ed.gov/
   - need an account?
   - https://nces.ed.gov/datalab/table/library
