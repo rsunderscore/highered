@@ -27,7 +27,11 @@ we would like you to apply what you already know about business intelligence and
   - tables were extracted frome existing papers and repserent summary statistics
   - can also run a powerstats analysis but this also doesn't give access to source data
   - https://nces.ed.gov/datalab/table/library - downloaded a few samples to see if they could be parsed
-- data prep
+
+## data commentary
+Much of the avaialble data is pre-summarized rather than source data.  Many resources have their own data analytics sites allowing for basic analysis on the data without downloading the full data set.  Much of the NCES data was in the form of papers with tables extracted for further use, but the raw source data was not accessible. Kaggle datasets mostly algined with expectations, but sources might be users themselves, or the data was older.  For example, the board of education  scorecard data was a few years older than the version available on the data.gov site.  Some sites had the option to contact them for specific data, but the forms for this would often fail if did not cite the intituation you were working for.  
+
+## data prep
   - nulls
   - scale/standardize features?
   - nlp
