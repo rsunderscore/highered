@@ -2,14 +2,17 @@
 we would like you to apply what you already know about business intelligence and be prepared to discuss an interesting analysis that would be appropriate for higher education. Feel free to be creative and to share any part of the analytical process (i.e organizing/modeling data, measures created, presentation of final product, tools used, test/deployment, questions answered/relevance). 
 
 ## data resources
+- data.gov
+- data.ed.gov - [scorecard](https://data.ed.gov/dataset/college-scorecard-all-data-files-through-6-2020/resources?resource=693ba436-110b-4a04-b6eb-d77804607f45)
 - huggingface - https://huggingface.co
   - unsucessful searches: education, college, university, student
 - kaggle - https://www.kaggle.com/datasets
   - https://www.kaggle.com/spscientist/students-performance-in-exams
   - https://www.kaggle.com/yasserh/student-marks-dataset
-  - https://www.kaggle.com/prasertk/qs-world-university-rankings-2021
+  - us department of education data - sqlite db - looks useful but old (2018)
+  - https://www.kaggle.com/prasertk/qs-world-university-rankings-2021 - downloaded
   - https://www.kaggle.com/benroshan/factors-affecting-campus-placement
-  - * https://www.kaggle.com/wsj/college-salaries (WSJ and degrees that pay back)
+  - * https://www.kaggle.com/wsj/college-salaries (WSJ and degrees that pay back) - downloaded
 - common data set - http://commondataset.org/
   - the url for data looks like: https://commondataset.org/wp-content/uploads/2021/10/CDS_2021-2022-1.xlsx
   - cannot find an archive of prior years - each universiy has a separate archive of their submissions over tiem (e.g. MIT)
@@ -21,7 +24,7 @@ we would like you to apply what you already know about business intelligence and
   - [x] need an account? created - https://nces.ed.gov/datalab/
   - tables were extracted frome existing papers and repserent summary statistics
   - can also run a powerstats analysis but this also doesn't give access to source data
-  - https://nces.ed.gov/datalab/table/library
+  - https://nces.ed.gov/datalab/table/library - downloaded a few samples to see if they could be parsed
 - data prep
   - nulls
   - scale/standardize features?
