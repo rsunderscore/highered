@@ -2,7 +2,7 @@
 we would like you to apply what you already know about business intelligence and be prepared to discuss an interesting analysis that would be appropriate for higher education. Feel free to be creative and to share any part of the analytical process (i.e organizing/modeling data, measures created, presentation of final product, tools used, test/deployment, questions answered/relevance). 
 
 ## data resources
-- data.gov
+- data.gov - https://catalog.data.gov/dataset?organization=ed-gov
 - data.ed.gov - [scorecard](https://data.ed.gov/dataset/college-scorecard-all-data-files-through-6-2020/resources?resource=693ba436-110b-4a04-b6eb-d77804607f45)
 - huggingface - https://huggingface.co
   - unsucessful searches: education, college, university, student
@@ -22,6 +22,8 @@ we would like you to apply what you already know about business intelligence and
   - [ASC](https://professionals.collegeboard.org/higher-ed/recruitment/annual-survey) (Annual survey of colleges) contains CDS questions - can request ASC data access via [this form](https://collegeboard.tfaforms.net/69)
 - government - http://nces.ed.gov/
   - [x] need an account? created - https://nces.ed.gov/datalab/
+  - IPEDS - https://nces.ed.gov/ipeds/use-the-data
+    - full data sets - https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx?gotoReportId=7&fromIpeds=true - data is by year for each category (it may be possible to derive patterns in file naming and automate downloads for many years)
   - tables were extracted frome existing papers and repserent summary statistics
   - can also run a powerstats analysis but this also doesn't give access to source data
   - https://nces.ed.gov/datalab/table/library - downloaded a few samples to see if they could be parsed
