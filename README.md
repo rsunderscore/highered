@@ -90,6 +90,6 @@ memory usage: 684.8+ MB
 - large datset options
   - dask
   - online learning
-  - read from csv as needed Apache Anvil
+  - read from csv as needed Apache drill
   - data segmentation tool
 - 
