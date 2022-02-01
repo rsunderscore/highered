@@ -42,12 +42,20 @@ The all data elements data files raised errors due to mxied types in certain col
 `The default setting for SQLITE_MAX_COLUMN is 2000` (https://sqlite.org/limits.html)
 
 
-data specs 'all data fields':
+<pre>data specs 'all data fields':
 'pandas.core.frame.DataFrame'
 Int64Index: 176720 entries, 0 to 6693
 Columns: **2393** entries, UNITID to filename
 dtypes: float64(647), int64(6), **object(1740)**
-memory usage: 3.2+ GB
+memory usage: 3.2+ GB</pre>
+
+<pre>
+class 'pandas.core.frame.DataFrame'>
+Int64Index: 954880 entries, 0 to 260530
+Data columns (total 93 columns)
+dtypes: float64(3), int64(4), object(86)
+memory usage: 684.8+ MB
+</pre>
 
 - [ ] merge data categories
 
