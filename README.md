@@ -36,7 +36,11 @@ Much of the avaialble data is pre-summarized rather than source data.  Many reso
   - scale/standardize features?
   - nlp
 
-## EDA
+## EDA data.gov - scorecard 
+Scorecard data was relatively recent (Aug 2021) and had a large number of measures and data back through year 1996.  There was ~ 30 files contained in a zip archive, which we can access directly using python's zipfile package in the standard library. Files were generally split by academic year and there were 2 major categories: Field of Study, and all data elements; thse columns were confirmed to match through the files sets.  There was also a crosswalks.zip subfolder that contained excel files for each year for the purpose of matching POEID to IPEDS for each institution, and giving high level information regarding those data sources and how it changed from the prior year.  Metedata for the main set of files was in a yaml file, so I wrote some python code to parse the relevent details into python dictionaries.  I also created a sqlite DB to hold data so that it would not have to be re-loaded. 
+
+- [ ] merge data categories
+
 - what measures are available
   - what are their dat types
 - what should be the target variable
