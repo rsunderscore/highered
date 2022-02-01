@@ -56,6 +56,7 @@ Data columns (total 93 columns)
 dtypes: float64(3), int64(4), object(86)
 memory usage: 684.8+ MB
 </pre>
+![image](https://user-images.githubusercontent.com/51385580/151902970-f50f0f32-f339-470c-be5a-e4567e97eeeb.png)
 
 - [ ] merge data categories
 
