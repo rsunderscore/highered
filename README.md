@@ -84,3 +84,12 @@ memory usage: 684.8+ MB
   - [ ] download other data sets?
 - [ ] exploration ipynb
 - [ ] pyth9on module
+
+
+## lessons learned
+- large datset options
+  - dask
+  - online learning
+  - read from csv as needed Apache Anvil
+  - data segmentation tool
+- 
