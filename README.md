@@ -37,10 +37,9 @@ Much of the avaialble data is pre-summarized rather than source data.  Many reso
   - nlp
 
 ## EDA data.gov - scorecard 
-Scorecard data was relatively recent (Aug 2021) and had a large number of measures and data back through year 1996.  There was ~ 30 files contained in a zip archive, which we can access directly using python's zipfile package in the standard library. Files were generally split by academic year and there were 2 major categories: Field of Study, and all data elements; thse columns were confirmed to match through the files sets.  There was also a crosswalks.zip subfolder that contained excel files for each year for the purpose of matching POEID to IPEDS for each institution, and giving high level information regarding those data sources and how it changed from the prior year.  Metedata for the main set of files was in a yaml file, so I wrote some python code to parse the relevent details into python dictionaries.  I also created a sqlite DB to hold data so that it would not have to be re-loaded. 
-The all data elements data files raised errors due to mxied types in certain columns.  This dataset also could not be loaded into sqlite directly because it exceeded the default 2000 column limit. 
-`The default setting for SQLITE_MAX_COLUMN is 2000` (https://sqlite.org/limits.html)
-
+Scorecard data was relatively recent (Aug 2021) and had a large number of measures and data back through year 1996.  There was ~ 30 files contained in a zip archive, which we can access directly using python's zipfile package in the standard library. Files were generally split by academic year and there were 2 major categories: Field of Study, and all data elements; thse columns were confirmed to match through the files sets.  There was also a crosswalks.zip subfolder that contained excel files for each year for the purpose of matching POEID to IPEDS for each institution, and giving high level information regarding those data sources and how it changed from the prior year.  Metedata for the main set of files was in a yaml file, so I wrote some python code to parse the relevent details into python dictionaries.  I also created a sqlite DB to hold data so that it would not have to be re-loaded.
+Data imports were challeged by mxed data types, several institutions opted to not report certain metrics for privacy reasons and the corresponding data elements were replaced with a text string 'Privacy Suppressed' it what would otherwise be a numeric column.  For the purposes of this analysis I replaced these fields with a -1 in the csv text to allow the data files to successfully load.  This allowed me to count the number of privacy suppressed items if that became necessary.  When summarizing the numeric columns it was necessary to replace the -1 with a null so that the calculations would not be skewed by the special numeric data marker.  
+Other issues were encounted loading th data into the sqlite database.  The all data elements dataset had around 3500 columns, which exceeded the default 2000 column limit for this database type. `The default setting for SQLITE_MAX_COLUMN is 2000` (https://sqlite.org/limits.html) The workaround for this was to split the columns and laod that data as 2 separate tables.  the overall size of the database on disk was ~5GB.  
 
 <pre>data specs 'all data fields':
 'pandas.core.frame.DataFrame'
@@ -58,7 +57,8 @@ memory usage: 684.8+ MB
 </pre>
 ![image](https://user-images.githubusercontent.com/51385580/151902970-f50f0f32-f339-470c-be5a-e4567e97eeeb.png)
 
-- [ ] merge data categories
+
+The large size of the datset was prohibitive for exploring the data so a single file was used to determine what measures might be of value.  Field of Study metrics contained more detailed information about each degree on offer at the institution with summary metrics around earnings and DEBT withing each.  The data labeled as 'all data sets' or 'MERGED' had a more diverse set of features but data was at the instituion level rather than for each degree.  Based on the field of study information it seemed possible to develop a profile for each school based on the degrees that were most taken at that institution (e.g. Law degrees at Harvard imply it should be compared to other schools that favor Law).  
 
 - what measures are available
   - what are their dat types
@@ -81,10 +81,10 @@ memory usage: 684.8+ MB
 ## tasks
 - [x] git repos
 - [x] data directory (ignoredir)
-  - [x] download common data set
-  - [ ] download other data sets?
-- [ ] exploration ipynb
-- [ ] pyth9on module
+  - [x] download data sets
+  - [x] merge data categories
+- [x] exploration ipynb
+- [x] py module - to eliminate clutter
 
 
 ## lessons learned
@@ -93,4 +93,5 @@ memory usage: 684.8+ MB
   - online learning
   - read from csv as needed Apache drill
   - data segmentation tool
-- 
+  - spark
+  - gitlab
