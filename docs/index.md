@@ -1,8 +1,11 @@
 ---
 layout: default
+title: Analysis of Higher Education Data
+description: Identify a higher education dataset and determine how to leverage the data to benefit a prospective college or university.
 ---
-# higher ed
-we would like you to apply what you already know about business intelligence and be prepared to discuss an interesting analysis that would be appropriate for higher education. Feel free to be creative and to share any part of the analytical process (i.e organizing/modeling data, measures created, presentation of final product, tools used, test/deployment, questions answered/relevance). 
+# Analysis of Higher Education Dataset
+Based on the job interview request:
+"apply what you already know about business intelligence and be prepared to discuss an interesting analysis that would be appropriate for higher education. Feel free to be creative and to share any part of the analytical process (i.e organizing/modeling data, measures created, presentation of final product, tools used, test/deployment, questions answered/relevance)."
 
 ## data commentary
 Much of the avaialble data is pre-summarized rather than source data.  Many resources have their own data analytics sites allowing for basic analysis on the data without downloading the full data set.  Much of the NCES data was in the form of papers with tables extracted for further use, but the raw source data was not accessible. Kaggle datasets mostly algined with expectations, but sources might be users themselves, or the data was older.  For example, the board of education  scorecard data was a few years older than the version available on the data.gov site.  Some sites had the option to contact them for specific data, but the forms for this would often fail if did not cite the intituation you were working for.  
